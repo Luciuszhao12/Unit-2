@@ -9,16 +9,17 @@
 
 
 
+def language(N,sentence):
+    for i in range(N):
+        if "T" + "t" > "s" + "S":
+            print("English")
+        if "s" + "S" > "t" + "T":
+            print("French")
+        if "s" + "S" == "t" + "T":
+            print("French")
 
-for i in range(N):
-    if "T" and "t" > "s" and "S":
-        print(English)
-if "s" and "S" > "t" and "T":
-    print(French)
-if "s" and "S" == "t" and "T":
-    print(French)
 
-
-input N(0<N<10000)
+def N(numbers):
+    input (numbers):("0<N<10000")
 
 N("The red cat sat on the mat. Why are you so sad cat? Don't ask that.")
