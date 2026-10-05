@@ -9,17 +9,38 @@
 
 
 
-def language(N,sentence):
+# """ def language(N,sentence):
+#     for i in range(N):
+#         if "T" + "t" > "s" + "S":
+#             print("English")
+#         if "s" + "S" > "t" + "T":
+#             print("French")
+#         if "s" + "S" == "t" + "T":
+#             print("French")
+
+
+# def N(numbers):
+#     input (numbers):("0<N<10000")
+
+# N("The red cat sat on the mat. Why are you so sad cat? Don't ask that.") """
+
+
+# x = (float(input("How much is the Bill?")))
+# tip = [1.0 , 1.2 , 1.25, 2.0]
+
+def wizards(N,start,duels):
+    owner = start
+    changed_hands = 1
+    print(duels[0][1])
+
     for i in range(N):
-        if "T" + "t" > "s" + "S":
-            print("English")
-        if "s" + "S" > "t" + "T":
-            print("French")
-        if "s" + "S" == "t" + "T":
-            print("French")
+        if duels[0][1] == owner:
+            owner = duels[0][0]
+            change_hands += 1
+    print(owner)
 
 
-def N(numbers):
-    input (numbers):("0<N<10000")
 
-N("The red cat sat on the mat. Why are you so sad cat? Don't ask that.")
+
+
+wizards(3, "A", ["BA", "CB", "DA"])
