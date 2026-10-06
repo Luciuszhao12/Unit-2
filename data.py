@@ -31,13 +31,11 @@
 def wizards(N,start,duels):
     owner = start
     changed_hands = 1
-    print(duels[0][1])
-
     for i in range(N):
-        if duels[0][1] == owner:
-            owner = duels[0][0]
-            change_hands += 1
-    print(owner)
+        if duels[i][1] == owner:
+            owner = duels[i][0]
+            changed_hands += 1
+    print(owner, changed_hands)
 
 
 
