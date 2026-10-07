@@ -28,17 +28,28 @@
 # x = (float(input("How much is the Bill?")))
 # tip = [1.0 , 1.2 , 1.25, 2.0]
 
-def wizards(N,start,duels):
-    owner = start
-    changed_hands = 1
-    for i in range(N):
-        if duels[i][1] == owner:
-            owner = duels[i][0]
-            changed_hands += 1
-    print(owner, changed_hands)
+# def wizards(N,start,duels):
+#     owner = start
+#     changed_hands = 1
+#     for i in range(N):
+#         if duels[i][1] == owner:
+#             owner = duels[i][0]
+#             changed_hands += 1
+#     print(owner, changed_hands)
 
 
+# wizards(3, "A", ["BA", "CB", "DA"])
 
 
-
-wizards(3, "A", ["BA", "CB", "DA"])
+total = float(input("How much was the bill?"))
+tip = [1.00 , 1.20 , 1.25 , 1.30]
+service = input("How's the service? (Bad, Normal, Good, Fantastic)")
+print("The bill is $")
+if service == "Bad":
+    print (tip[0]*total)
+elif service == "Normal":
+    print (tip[1]*total)
+elif service == "Good":
+    print (tip[2]*total)
+elif service == "Fantastic":
+    print (tip[3]*total)
